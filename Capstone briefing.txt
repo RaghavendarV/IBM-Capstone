@@ -1,0 +1,18 @@
+Data collection methods:
+1. using the "Spacex" website's api, we collected the necessarcy data, some of the main features including, Booster data, launch sites, different payloads. after collection of data, we examine the data thoroughly and upon inspection we see some missing datas in payload and launch site features, and approach to handle them. we use the replace with mean method to handle missing payload values.
+2. as the second method of collecting data, we webscrape data from wikipedia pages related to Falcon 9 and Falcon Heavy launches using BeautifulSoup.
+
+Data Wrangling:
+now it the step where we will be converting and mapping raw data into a usable form for data analysis. make changes in the dataset to understand the target variables. starting from checking basic data types of the data to adding new columns for helping the analysis.
+
+Exploratory data analysis:
+1. using SQL server, we query and sort the data. trying to understand the relation between each feature with the mission outcome/landing outcome. we use many functions such as aggregate functions and explore the data which will give som einsights to us.
+2. using matplotlib and seaborn libraries, we graphically plot out the numbers from our data which will further ease our process of understanding the features which is a process called Preparing Data Feature Engineering.
+
+Visual analytics:
+1. after completing the feature engineering, which deals with the numerics in the data, we com eto analyse th eexternal/geographical features which are crucial to our Case as it involves few physics related terms like rocket trajectories,etc. for this we use Folium library, which handles the factors like location and proximities of a launch site, i.e., the initial position of rocket trajectories. Finding an optimal location for building a launch site certainly involves many factors and hopefully we could discover some of the factors by analyzing the existing launch site locations. we mark out the locations with the given latitudes and longitudes in the data set and discover new insights.
+
+Modelling:
+finally we have come to the stage where we try to predict the outcome of a certain mission before it commences given the data about the launches and its whereabouts.We use machine learning to determine if the first stage of Falcon 9 will land successfully. You will split your data into training data and test data to find the best Hyperparameter for SVM, Classification Trees, and Logistic Regression.
+
+
